@@ -1,0 +1,100 @@
+.banner{
+    background: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.2) 39%,
+        rgba(51, 56, 57, 1) 96%
+      ), url('../assets/img/cofeda2.jpg') center center fixed no-repeat;
+    background-size: cover;
+    height: 580px;
+    padding-bottom: 100px;
+   
+}
+
+.tanner{
+    background-size: cover;
+}
+/* Ajuster la hauteur du carrousel */
+.carousel, .carousel-inner, .carousel-item {
+    height: 100vh;
+}
+
+/* Ajuster la taille des images */
+.carousel-item img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; /* Ajuste l’image sans la déformer */
+}
+
+/* Personnalisation du texte */
+.carousel-caption {
+    bottom: 30%; /* Positionne le texte plus haut */
+}
+
+.carousel-caption h1 {
+    font-size: 3rem; /* Taille du titre */
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem; /* Taille du texte */
+}
+
+/* Ajouter un fond semi-transparent pour le texte */
+.carousel-caption-bg {
+    z-index: 2;
+    padding: 10px;
+    display: inline-block;
+    }
+    
+    .carte {
+        background-color: transparent !important;
+        border: none; /* Supprime aussi la bordure */
+        color: white;
+    }
+    .card {
+        background-color: transparent !important;
+        border: none; /* Supprime aussi la bordure */
+        
+    }
+    
+
+    ul .hul:hover{
+        background-color: #ffc107;
+
+    }
+
+    .about2{
+        background: linear-gradient(
+            105deg,            
+            rgba(51, 56, 57, 1) 96%,
+            rgba(255, 255, 255, 0.2) 39%);
+    }
+
+   .footer ul a{
+    padding: 0%;
+   }
+
+   .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Noir avec 50% de transparence */
+    z-index: 1; /* Place l'overlay au-dessus de l'image */
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0; /* Assure que l'image est sous l'overlay */
+}
+
+
+.actu{
+    background: url(assets/img/shape-2.png) center center fixed cover;
+}
+
+.become{
+    background-image: url(../assets/img/cause-bg-1.png) center center fixed cover;
+}
