@@ -54,7 +54,60 @@
     .card {
         background-color: transparent !important;
         border: none; /* Supprime aussi la bordure */
-        
+    }
+
+    .cardy{
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .carted{
+        animation: slidebot 1s reverse;
+    }
+
+    @keyframes slidebot{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(200px);
+        }
+    }
+
+    .ted{
+        animation: isidor 2s reverse  ease-in-out;
+    }
+
+    @keyframes isidor{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(200px);
+        }
+    }
+
+    .yed{
+        animation: igor 2s reverse  ease-in-out;
+    }
+
+    @keyframes igor{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-200px);
+        }
+    }
+
+    .cat{
+        align-items: center;
+        text-align: start;
+        margin: 20px 40px;
+       
+    }
+
+    .dep{
+        background-color: aliceblue;
     }
     
 
@@ -64,12 +117,11 @@
     }
 
     .about2{
-        background: linear-gradient(
-            105deg,            
-            rgba(51, 56, 57, 1) 96%,
-            rgba(255, 255, 255, 0.2) 39%);
+        background:
+            url(assets/img/fd/exp.jpeg), center center fixed;
+            background-size: cover;
     }
-
+    
    .footer ul a{
     padding: 0%;
    }
@@ -91,10 +143,31 @@
 }
 
 
-.actu{
-    background: url(assets/img/shape-2.png) center center fixed cover;
-}
 
 .become{
-    background-image: url(../assets/img/cause-bg-1.png) center center fixed cover;
+    background:
+            url(assets/img/cause-bg-1.png), center center fixed;
+            background-size: cover;
+}
+
+.act{
+  background-color: red;
+  border: 1px solid black;
+}
+
+.imag{
+   
+    transition: transform 0.5s ease-in-out;
+}
+
+.ulu{
+    height: 85%;
+}
+
+.imag:hover{
+    transform: scale(1.2);
+}
+
+.over{
+    overflow: hidden;
 }
