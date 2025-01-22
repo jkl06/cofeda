@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Générator</title>
+<!-- CSS-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-success">
+
+    <div class="container ">
+        <div class="row justify-content-center md-ms-2 sm-me-2">
+            <div class="card" style="width: 28rem;">
+                
+                <div class="gener">
+        <h1 class="hz">Générateur de QR Code</h1>
+        <div class="form">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control"
+                id="text" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+              <a href="" type="button" class="btn btn-success h-100 w-100" id="generate">Générer QR</a>
+            </div>
+    </div>
+
+    <div class="result d-none" id="qrresult">
+        <canvas id="qrcode" class="mb-5"></canvas>
+        <a href="" type="button" class="btn btn-success" id="download">Télécharger</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</body>
+</html>

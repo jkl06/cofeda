@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // nombre entre 0 à 10
+    // verifier si le nombre est correct sinon rejeter et demander à nouveau le nom
+    //faire une incrémentation descendante si c'est correcte
+    
+    let guest = 8
+    let number
+
+    while(number !== guest){
+         number = Number(prompt("Votre chiffre"));
+        if(number < guest){
+            console.log("Encore plus");
+        } else if(number > guest){
+            console.log("Encore moins");
+        }
+    }
+ console.log("Bravo vous avez gagné!");
+  
+    
+
+   </script>
+</body>
+</html>
